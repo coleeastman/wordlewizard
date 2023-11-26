@@ -357,34 +357,6 @@ function toggleColor() {
   }
 }
 
-/*
-function toggleColor() {
-  // Trigger flip animation
-  this.classList.add('flip');
-
-  // Existing color toggle logic
-  if (this.classList.contains("grey")) {
-    this.classList.remove("grey");
-    this.classList.add("yellow");
-    this.style.backgroundColor = "rgb(201, 180, 88)";
-  } else if (this.classList.contains("yellow")) {
-    this.classList.remove("yellow");
-    this.classList.add("green");
-    this.style.backgroundColor = "rgb(106, 169, 100)";
-  } else if (this.classList.contains("green")) {
-    this.classList.remove("green");
-    this.classList.add("grey");
-    this.style.backgroundColor = "rgb(120, 124, 126)";
-  }
-
-  // Remove the flip class after the animation ends
-  setTimeout(() => {
-    this.classList.remove('flip');
-  }, 400); // Duration of the flip animation
-}
-*/
-
-
 function getColor(button) {
   if (button.classList.contains("grey")) {
     return "grey";
