@@ -128,19 +128,7 @@ body {
 
  .SeeBestWords:hover {
    cursor: pointer; 
-}
-
- /* Flip animation */
-@keyframes flip {
-   0% { transform: rotateX(0deg); }
-   50% { transform: rotateX(90deg); }
-   100% { transform: rotateX(180deg); }
- }
- 
- .flip {
-   animation: flip 0.4s ease;
- }
- 
+} 
 
  .best-words-container {
    display: flex;
