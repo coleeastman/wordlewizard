@@ -1,0 +1,162 @@
+
+body {
+    font-family: 'Clear Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex; 
+    flex-direction: column;  
+    align-items: center; 
+ }
+ 
+ h1 {
+    color: rgb(26, 26, 27);
+    font-size: 25px;
+ }
+
+ .h1:hover {
+   cursor: pointer; 
+}
+
+ #wordleBoard {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px;
+    width: 300px;
+ }
+ 
+ #row1, #row2, #row3, #row4, #row5, #row6  {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+ }
+ 
+ .letterBox1, .letterBox2, .letterBox3, .letterBox4, .letterBox5, 
+ .letterBox6, .letterBox7, .letterBox8, .letterBox9, .letterBox10, 
+ .letterBox11, .letterBox12, .letterBox13, .letterBox14, .letterBox15, 
+ .letterBox16, .letterBox17, .letterBox18, .letterBox19, .letterBox20, 
+ .letterBox21, .letterBox22, .letterBox23, .letterBox24, .letterBox25, 
+ .letterBox26, .letterBox27, .letterBox28, .letterBox29, .letterBox30
+ {
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgb(200, 200, 200);
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+ }
+ 
+ input,
+ button {
+    margin: 2px;
+    font-size: 24px;
+    text-align: center;
+ }
+ 
+ input[type="text"],
+ button {
+    margin: 2px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ .completedRow {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;  
+    align-items: center; 
+ } 
+ 
+ 
+ .colorButton {
+    width: 46px;
+    height: 46px;
+    background-color: #d3d6da;
+    margin-right: 2.5px;
+    margin-bottom: 2.5px;
+    border: none;   
+    color:white;
+    font-weight: bold;
+    font-size: 48;
+ }
+
+ .colorButton:hover {
+   cursor: pointer; 
+ }
+ 
+ .grey {
+    background-color: rgb(75, 75, 75);
+ }
+ 
+ .yellow {
+    background-color: rgb(250, 229, 55, 0.75);
+ }
+ 
+ .green {
+    background-color: rgb(47, 168, 37, 0.75);
+ }
+
+ .submitBtn {
+   background-color: rgb(211, 214, 218);
+   color: black;
+   border: 2px solid transparent;
+   border-radius: 10px;
+   padding: 15px 10px;
+   font-size: 14px;
+   font-weight: 550;
+ }
+
+ .submitBtn:hover {
+   cursor: pointer; 
+}
+
+ .SeeBestWords {
+   background-color: rgb(211, 214, 218);
+   color: black;
+   border: 2px solid transparent;
+   border-radius: 10px;
+   padding: 15px 10px;
+   font-size: 14px;
+   font-weight: 550;
+ }
+
+ .SeeBestWords:hover {
+   cursor: pointer; 
+}
+
+ /* Flip animation */
+@keyframes flip {
+   0% { transform: rotateX(0deg); }
+   50% { transform: rotateX(90deg); }
+   100% { transform: rotateX(180deg); }
+ }
+ 
+ .flip {
+   animation: flip 0.4s ease;
+ }
+ 
+
+ .best-words-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ #completedWordContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%; /* Or a specific max-width if that's more appropriate */
+ }
+
+ #completedWordContainer p {
+   word-wrap: break-word; /* This will break very long strings to the next line */
+   text-align: center; /* Ensure the text is centered */
+   max-width: 300px; /* Adjust as needed */
+ }
