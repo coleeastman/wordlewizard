@@ -10,7 +10,6 @@ var word5 = "";
 var word6 = "";
 
 // auto cursor
-// Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Get all the letterBox input elements
 
@@ -42,8 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-// Add an event listener to the submit button
 document.getElementById("submitButton").addEventListener("click", combineInputBoxes);
 
 function combineInputBoxes() {
@@ -120,9 +117,6 @@ function combineRowInputBoxes(rowId) {
 
 function replaceInputsWithButtons(rowId) {
 
-  //flip animation
-
-  
   var rowDiv = document.getElementById(rowId);
   var letterBoxes = rowDiv.querySelectorAll("input[type='text']");
 

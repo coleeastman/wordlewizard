@@ -22,7 +22,6 @@ body {
     flex-direction: column; 
     align-items: center; 
     margin-bottom: 20px;
-    width: 300px;
  }
  
  #row1, #row2, #row3, #row4, #row5, #row6  {
@@ -140,11 +139,36 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 100%; /* Or a specific max-width if that's more appropriate */
+   width: 100%;
  }
 
  #completedWordContainer p {
-   word-wrap: break-word; /* This will break very long strings to the next line */
-   text-align: center; /* Ensure the text is centered */
-   max-width: 300px; /* Adjust as needed */
+   word-wrap: break-word;
+   text-align: center;
+   max-width: 300px;
  }
+
+/* Your existing CSS styles */
+
+/* Your existing CSS styles */
+
+/* Media query for screens with a maximum width of 600 pixels (phones) */
+@media (max-width: 600px) {
+   body {
+     display: none; /* Hide the current content */
+   }
+   /* Display "phone.html" content for phones */
+   body::before {
+     content: url('phone.html');
+   }
+ }
+ 
+ /* Media query for screens with a minimum width of 601 pixels (larger screens) */
+ @media (min-width: 601px) {
+   body {
+     display: block; /* Display the current content for larger screens */
+   }
+   /* You don't need to specify "content" here, as the default content is "index.html" */
+ }
+ 
+
